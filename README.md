@@ -1,2 +1,2 @@
 # Java
-Simple Java Programs
+Learning the _Java_ Programming Language
