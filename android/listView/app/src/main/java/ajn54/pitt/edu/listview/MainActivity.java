@@ -2,13 +2,13 @@
 // Project: Assignment 1
 // Class: Mobile Application Development
 //
-// Author: Hung Nguyen
-// User: HDN5
+// Author: Aaron Newton
+// User: AJN54
 //
 // Completion time: 2 hours total
 //
 // Honor Code: I pledge that this program represents my own program code.
-// I received help from Bryce and Zach in designing and debugging my program.
+// I received help from YouTube in designing and debugging my program.
 //***********************************************************************
 
 package ajn54.pitt.edu.listview;
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Create listview with buttons
         listview = (ListView)findViewById(R.id.listview);
         String[] values = new String[]{"Hello World","Addition Calculator","Color Changer"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
@@ -40,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view,
                                     int position, long id) {
+
+                // Create three intents that direct to the other classes
                 if(position==0) {
                     Intent myintent = new Intent(view.getContext(),helloWorld.class);
                     startActivityForResult(myintent,0);
