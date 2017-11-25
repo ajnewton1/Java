@@ -1,6 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/orderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ORDER"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/pizza_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/orderText"
+        android:text="Pizza"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/smallPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMALL"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/pizza_order"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/smallPizzaBtn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/smallPizzaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.95"
+        android:layout_below="@+id/pizza_order"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/wings_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/smallPizzaBtn"
+        android:text="Wings"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/sixWings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sixWingsBtn"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/wings_order"
+        android:text="6 Count"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sixWingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sixWings"
+        android:text="4.50"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/salad_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sixWingsBtn"
+        android:layout_toStartOf="@+id/nineWingsBtn"
+        android:text="Salad"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,UnknownId" />
+
+    <Button
+        android:id="@+id/saladBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.95"
+        android:layout_below="@+id/salad_order"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/saladBtn"
+        android:text="Sides"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView35"
+        android:layout_toStartOf="@+id/textView43"
+        android:text="Garl. Bread"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,UnknownId" />
+
+    <Button
+        android:id="@+id/gBreadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView42"
+        android:text="3.00"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pizza_order"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="clear"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:layout_below="@+id/gBreadBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/pizzaTV"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/calcBtn"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/calcBtn"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/wingsTV"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/resultsTV"
+        android:layout_toStartOf="@+id/saladTV"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/saladTV"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/resultsTV"
+        android:layout_toStartOf="@+id/sidesTV"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:id="@+id/sidesTV"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resultsTV"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/resultsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pizzaTV"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

@@ -1,11 +1,11 @@
 //***********************************************************************
-// Project: Lab 4
+// Project: Project
 // Class: Mobile Application Development
 //
 // Author: Aaron Newton
 // User: AJN54
 //
-// Completion time: 2 hours total
+// Completion time:  20 hours total
 //
 // Honor Code: I pledge that this program represents my own program code.
 // I received help from YouTube in designing and debugging my program.
@@ -50,11 +50,14 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+        // Displaying icons on Tabs
         tabLayout.getTabAt(0).setIcon(R.drawable.pizza);
-        tabLayout.getTabAt(1).setIcon(R.drawable.dessert);
-        tabLayout.getTabAt(2).setIcon(R.drawable.wing);
-        tabLayout.getTabAt(3).setIcon(R.drawable.website);
-        tabLayout.getTabAt(4).setIcon(R.drawable.order);
+        tabLayout.getTabAt(1).setIcon(R.drawable.wing);
+        tabLayout.getTabAt(2).setIcon(R.drawable.salad);
+        tabLayout.getTabAt(3).setIcon(R.drawable.side);
+        tabLayout.getTabAt(4).setIcon(R.drawable.dessert);
+        tabLayout.getTabAt(5).setIcon(R.drawable.website);
+        tabLayout.getTabAt(6).setIcon(R.drawable.order);
     }
 
     @Override
@@ -80,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
             super(fm);
         }
 
+        // Associating Java file with each Tab
         @Override
         public Fragment getItem(int position) {
             //Returning the current tabs
@@ -88,17 +92,23 @@ public class MainActivity extends AppCompatActivity {
                     pizza tab1 = new pizza();
                     return tab1;
                 case 1:
-                    dessert tab2 = new dessert();
+                    wing tab2 = new wing();
                     return tab2;
                 case 2:
-                    wing tab3 = new wing();
+                    salad tab3 = new salad();
                     return tab3;
                 case 3:
-                    website tab4 = new website();
+                    side tab4 = new side();
                     return tab4;
                 case 4:
-                    order tab5 = new order();
+                    dessert tab5 = new dessert();
                     return tab5;
+                case 5:
+                    website tab6 = new website();
+                    return tab6;
+                case 6:
+                    order tab7 = new order();
+                    return tab7;
                 default:
                     return null;
             }
@@ -106,25 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 5;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            // text under the icons
-            switch (position) {
-                case 0:
-                    return "PIZZA";
-                case 1:
-                    return "DES'RT";
-                case 2:
-                    return "WINGS";
-                case 3:
-                    return "ONLINE";
-                case 4:
-                    return "ORDER";
-            }
-            return null;
+            return 7;
         }
     }
 }

@@ -22,18 +22,37 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/priceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6: $4.50  9: $6.75  12: $9.00"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
             <ImageView
-                android:id="@+id/mildBuff"
+                android:id="@+id/mildBuffImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
+                android:contentDescription=""
                 android:cropToPadding="true"
                 app:srcCompat="@drawable/mbwings"
-                android:contentDescription=""
                 tools:ignore="ContentDescription" />
 
+            <TextView
+                android:id="@+id/mildBuffText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mild Buffalo Wings"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
             <ImageView
-                android:id="@+id/hotBuff"
+                android:id="@+id/hotBuffImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
@@ -41,8 +60,17 @@
                 app:srcCompat="@drawable/hbwings"
                 tools:ignore="ContentDescription" />
 
+            <TextView
+                android:id="@+id/hotBuffText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hot Buffalo Wings"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
             <ImageView
-                android:id="@+id/garlicParm"
+                android:id="@+id/garlicParmImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
@@ -50,13 +78,40 @@
                 app:srcCompat="@drawable/gpwings"
                 tools:ignore="ContentDescription" />
 
+            <TextView
+                android:id="@+id/garlicParmText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Garlic Parm Wings"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
             <ImageView
-                android:id="@+id/bbq"
+                android:id="@+id/bbqImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:cropToPadding="true"
                 app:srcCompat="@drawable/bbqwings"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/bbqText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BBQ Wings"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <ImageView
+                android:id="@+id/whiteSpace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                app:srcCompat="@drawable/white"
                 tools:ignore="ContentDescription" />
         </LinearLayout>
     </ScrollView>

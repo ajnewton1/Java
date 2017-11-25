@@ -17,7 +17,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/priceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Small: $7.95  Medium: $9.95  Large: $11.95"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
 
             <ImageView
                 android:id="@+id/cheeseImage"
@@ -35,7 +46,9 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Cheese Pizza"
-                tools:ignore="HardcodedText,LabelFor,TextViewEdits" />
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,LabelFor,SpUsage,TextViewEdits" />
 
             <ImageView
                 android:id="@+id/pepperoniImage"
@@ -53,7 +66,9 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Pepperoni Pizza"
-                tools:ignore="HardcodedText,TextViewEdits" />
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage,TextViewEdits" />
 
             <ImageView
                 android:id="@+id/sausageImage"
@@ -71,7 +86,9 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Sausage Pizza"
-                tools:ignore="HardcodedText,TextViewEdits" />
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage,TextViewEdits" />
 
             <ImageView
                 android:id="@+id/meatloversImage"
@@ -89,7 +106,9 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Meat Lovers Pizza"
-                tools:ignore="HardcodedText,TextViewEdits" />
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage,TextViewEdits" />
 
             <ImageView
                 android:id="@+id/alfredoImage"
@@ -107,7 +126,9 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Alfredo Pizza"
-                tools:ignore="HardcodedText,TextViewEdits" />
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage,TextViewEdits" />
 
             <ImageView
                 android:id="@+id/veggieImage"
@@ -125,7 +146,19 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Veggie Pizza"
-                tools:ignore="HardcodedText,TextViewEdits" />
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage,TextViewEdits" />
+
+            <ImageView
+                android:id="@+id/whiteSpace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                app:srcCompat="@drawable/white"
+                tools:ignore="ContentDescription,InefficientWeight" />
         </LinearLayout>
     </ScrollView>
 
