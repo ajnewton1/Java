@@ -5,7 +5,7 @@
 // Author: Aaron Newton
 // User: AJN54
 //
-// Completion time:  20 hours total
+// Completion time:  3 days
 //
 // Honor Code: I pledge that this program represents my own program code.
 // I received help from YouTube in designing and debugging my program.
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(4).setIcon(R.drawable.dessert);
         tabLayout.getTabAt(5).setIcon(R.drawable.website);
         tabLayout.getTabAt(6).setIcon(R.drawable.order);
+        tabLayout.getTabAt(7).setIcon(R.drawable.database);
     }
 
     @Override
@@ -109,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
                 case 6:
                     order tab7 = new order();
                     return tab7;
+                case 7:
+                    database tab8 = new database();
+                    return tab8;
                 default:
                     return null;
             }
@@ -116,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 7;
+            return 8;
         }
     }
 }
